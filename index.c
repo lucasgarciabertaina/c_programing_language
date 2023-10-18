@@ -12,13 +12,13 @@ main()
   upper = 300; /* upper limit */
   step = 20;  /* step size */
 
-  printf("_____________________\n| Celcius |   Fahr  |\n#####################\n");
+  printf("______________________\n|   Fahr  | Celcius  |\n######################\n");
 
-  fahr = lower;
-  while (fahr <= upper) {
-    celsius = (5.0/9.0) * (fahr-32.0);
-    printf("|   %3.0f   | %6.1f  |\n", fahr, celsius);
-    fahr = fahr + step;
+  celsius = lower;
+  while (celsius <= upper) {
+    fahr = (celsius*(9.0/5.0)) + 32;
+    printf("|   %3.0f   |    %3.0f   |\n", celsius, fahr);
+    celsius = celsius + step;
   }
-  printf("---------------------\n");
+  printf("----------------------\n");
 }
