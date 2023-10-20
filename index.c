@@ -4,8 +4,11 @@
 main()
 {
   int c;
+  int condition;
 
   c = getchar();
-  while ((c = getchar()) != EOF)
+  while (condition = getchar() != EOF) {
+    printf("condition %d\n", condition);
     putchar(c);
+  }
 }
