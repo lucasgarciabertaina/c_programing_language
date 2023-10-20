@@ -1,7 +1,11 @@
 #include <stdio.h>
 
-/* copy input to output; 2nd version */
-main()
-{
-  printf("EOF %d", EOF);
+/* count characters in input; 1st version */
+
+main() {
+  long nc;
+
+  nc = 0;
+  while (getchar() != EOF)
+    ++nc;
 }
